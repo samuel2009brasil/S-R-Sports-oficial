@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&R Sports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-image: linear-gradient(#5ccb5f,#4c007d);
+    }
+  </style>
+</head>
+<body>
+  <link rel="shortcut icon" href="imagens/logo_resized_resized.png" type="image/x-icon">
+  <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        max-width: 900px;
+        margin: 50px auto;
+        gap: 40px;
+    }
+
+    .product-image {
+        flex: 1;
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .product-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-details h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 24px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .buy-button {
+        padding: 15px 25px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .buy-button:hover {
+        background-color: white;
+        font-size: 24px;
+        color: black;
+    }
+    .dropdown-menu {
+    background: linear-gradient(#5271ff, #ff66c4);
+    border: none;
+  }
+  .dropdown-item {
+    color: white;
+    font-weight: bold;
+  }
+  .card {
+  height: 450px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain; 
+  padding: 10px; 
+  background: #fff; 
+}
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 3em;
+}
+    </style>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: linear-gradient(#5ccb5f);">
+  <div class="container-fluid">
+    <a class="nav-link" href="index.html"><img src="imagens/logo_resized_resized.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="próxima.html" style="color: black;">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="suporte.html" style="color: black;">Suporte</a>
+        </li>
+      </ul>
+ <div class="dropdown">
+  <button type="button" class="buy-button btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    Produtos
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="bola.html">bola</a></li>
+    <li><a class="dropdown-item" href="camisa.html">Camisa</a></li>
+    <li><a class="dropdown-item" href="chuteira.html">Chuteiras</a></li>
+    <li><a class="dropdown-item" href="proteina.html">Suplementos</a></li>
+    <li><a class="dropdown-item" href="tenis.html">Tênis</a></li>
+  </ul>
+</div> 
+    </div>
+  </div>
+</nav>
+<!-- CARROSEL -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="oferta1.html">
+      <img src="imagens/oferta 1 (1).png" alt="Oferta 1" class="d-block" style="width:100%">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="oferta2.html">
+      <img src="imagens/Design sem nome (1).png" alt="Oferta 2" class="d-block" style="width:100%">
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="oferta1.html">
+      <img src="imagens/oferta 1 (1).png" alt="Oferta 3" class="d-block" style="width:100%">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CARD -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="--------------">
+        <img class="card-img-top" src="imagens/chuteira.png" alt="Imagem 1">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Chuteira Campo Puma Future 7 Play NJR BDP Unissex - Rosa</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$359,99</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="Creatina Powder Creapure 200g 2 un Universal.html">
+        <img class="card-img-top" src="imagens/whey.webp" alt="Imagem 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Creatina Powder Creapure 200g 2 un Universal</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$118,99</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="-------------------">
+        <img class="card-img-top" src="imagens/manguito.png" alt="Imagem 3">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Manguito MORMAII Brasil</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$76,89</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="Chuteira Campo Umbro Velocita Ix Club.html">
+        <img class="card-img-top" src="imagens/chuteira1.webp" alt="Imagem 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Chuteira Campo Umbro Velocita Ix Club</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$239,99</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="--------------------">
+        <img class="card-img-top" src="imagens/Bola de futvolei marela e preta.jpeg" alt="Imagem 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Bola de Futevôlei FT-5 Mikasa Amarela/Preta</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$239,99</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="---------------------">
+        <img class="card-img-top" src="imagens/bola basquete jordan.jfif" alt="Imagem 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Bola de Basquete Oficial de Jogo Nike Jordan FIBA Aprovada</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$239,99</h5>
+        </div>
+      </div>
+    </div>
+    
+  <h4 class="mb-4 fw-bold" style="display: flex; justify-content: center; align-items: center; color:white;">NAVEGUE POR MARCAS</h4>
+  <div class="container my-5 ">
+  <div class="row text-center" style="display: flex; justify-content: center; align-items: center; height: 20vh; ">
+    
+    <div class="col-6 col-md-2 mb-3">
+      <a href="marca-adidas.html" class="d-block bg-light border rounded p-3 shadow-sm">
+        <img src="imagens/adidas.png" class="img-fluid border rounded p-3 shadow-sm" alt="Adidas">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+      <a href="marca-nike.html" class="d-block bg-light border rounded p-3 shadow-sm">
+        <img src="imagens/nike.png" class="img-fluid border rounded p-3 shadow-sm" alt="Nike">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+      <a href="marca-mizuno.html" class="d-block bg-light border rounded p-3 shadow-sm">
+        <img src="imagens/mizuno.png" class="img-fluid border rounded p-3 shadow-sm" alt="Mizuno">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+      <a href="marca-lacoste.html" class="d-block bg-light border rounded p-3 shadow-sm">
+        <img src="imagens/lacoste.png" class="img-fluid border rounded p-3 shadow-sm" alt="Lacoste">
+      </a>
+    </div>
+    <div class="col-6 col-md-2 mb-3">
+      <a href="marca-kappa.html" class="d-block bg-light border rounded p-3 shadow-sm">
+        <img src="imagens/kappa.png" class="img-fluid border rounded p-3 shadow-sm" alt="Kappa">
+      </a>
+    </div>
+
+  </div>
+</div>
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="------------------">
+        <img class="card-img-top" src="imagens/bola volei laranja verde e braca.jfif" alt="Imagem 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Bola de Vôlei Penalty Pró 7.0 Aprovada pela FIVB 2018</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$239,99</h5>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="---------------------------">
+        <img class="card-img-top" src="imagens/Bola futvolei roxa e branca.jfif" alt="Imagem 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Bola Futevolei Oficial Original Pro Altinha Futmesa Vulcanizada Praia - Pro Balls</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$239,99</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4 d-flex">
+      <div class="card bg-dark text-white">
+        <a href="-----------------">
+        <img class="card-img-top" src="imagens/bola penalty basquete.jfif" alt="Imagem 2">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Bola Basquete Penalty Masculino 7.8 Crossover X</h5>
+          <h5 class="card-text" style="font-size: 30px; color: green;">R$239,99</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>
+    <ul class="list-group">
+  <li class="list-group-item bg-dark"><a href="politica-privacidade.html">Política de privacidade</a><li class="list-group-item bg-dark"><a href="suporte.html">Entre em contato conosco</a></li>
+</li>
+  <li class="list-group-item bg-dark"><a href="https://www.youtube.com/">Redes Sociais</a></li>
+</ul>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    <p>CNPJ: 81.645.366/0001-10</p>
+  </footer>
+</body>
